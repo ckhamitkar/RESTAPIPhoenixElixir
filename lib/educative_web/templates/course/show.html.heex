@@ -1,0 +1,28 @@
+<h1>Show Course</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @course.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @course.description %>
+  </li>
+
+  <li>
+    <strong>Author:</strong>
+    <%= @course.author %>
+  </li>
+
+  <li>
+    <strong>Free:</strong>
+    <%= @course.free %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.course_path(@conn, :edit, @course) %></span> |
+<span><%= link "Back", to: Routes.course_path(@conn, :index) %></span>
